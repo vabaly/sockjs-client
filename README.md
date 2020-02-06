@@ -10,7 +10,7 @@
 
 # SockJS for enterprise
 
-> 因 `webpack-dev-server` 中客户端部分用到了这个库从而结识，将通过阅读此文档在此文档上做一些笔记或翻译帮助明白为什么有这个库，解决了什么问题等等
+> 因 `webpack-dev-server` 中客户端部分用到了这个库从而结识，将通过阅读此文档在此文档上做一些笔记或翻译帮助明白为什么有这个库，解决了什么问题等等，后续再看看源码
 
 Available as part of the Tidelift Subscription.
 
