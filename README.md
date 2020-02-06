@@ -10,11 +10,19 @@
 
 # SockJS for enterprise
 
+> 因 `webpack-dev-server` 中客户端部分用到了这个库从而结识，将通过阅读此文档在此文档上做一些笔记或翻译帮助明白为什么有这个库，解决了什么问题等等
+
 Available as part of the Tidelift Subscription.
 
 The maintainers of SockJS and thousands of other packages are working with Tidelift to deliver commercial support and maintenance for the open source dependencies you use to build your applications. Save time, reduce risk, and improve code health, while paying the maintainers of the exact dependencies you use. [Learn more.](https://tidelift.com/subscription/pkg/npm-sockjs-client?utm_source=npm-sockjs-client&utm_medium=referral&utm_campaign=enterprise&utm_term=repo)
 
 # Summary
+
+> 通过下面的描述可以知道 Sockjs Client 主要解决 Websocket API 兼容性问题，并提供开箱即用的跨域解决方案，支持跨域的话可能需要配套 Sockjs Server。
+>
+> 解决兼容性问题的主要做了这么几件事：
+> 1. 不同标准的 Websocket API 封装成 W3C 标准的 Websocket 标准
+> 2. 不支持 Websocket API 的内部采用轮询的方式，但是暴露给外部仍是 Websocket API 的形式。轮询根据不同浏览器有 XHR、iframe-XHR、JSONP 几种形式
 
 SockJS is a browser JavaScript library that provides a WebSocket-like
 object. SockJS gives you a coherent, cross-browser, Javascript API
